@@ -9,11 +9,14 @@ const path    =  require('path');
 
 const  Sockets=  require('./sockets');
 
+//We need use this declaration for use DOTENV
+require('dotenv').config();
+
 class Server {
 
     constructor(){
         this.app    = express();
-        this.port   = 8080;
+        this.port   = process.env.PORT;
         this.server = http.createServer(this.app);
         this.io     = socketio(this.server,{/*Configurationes */});
     }
