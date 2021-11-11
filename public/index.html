@@ -54,7 +54,7 @@
         });
 
         socket.on('mensaje-from-server',(data)=>{
-            mensajes.innerHTML = `<li>${data.texto}</li>`;
+            mensajes.innerHTML += `<li>${data.texto}</li>`;
         })
 
         /*socket.on('mensaje-bienvenida',(data)=>{
