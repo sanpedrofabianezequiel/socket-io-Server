@@ -18,3 +18,8 @@ $ heroku git:remote -a san-pedro-socket-react-server
 $ git add .
 $ git commit -am "make it better"
 $ git push heroku master
+
+
+```
+    Ver Logs:    - heroku logs -n 1000 --tail
+```
