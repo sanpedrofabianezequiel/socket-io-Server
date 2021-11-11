@@ -9,6 +9,8 @@ const path    =  require('path');
 
 const  Sockets=  require('./sockets');
 
+const cors    =  require('cors');
+
 //We need use this declaration for use DOTENV
 require('dotenv').config();
 
@@ -24,6 +26,7 @@ class Server {
     middlewares(){
         //Deploy directory public
         this.app.use( express.static(  path.resolve( __dirname ,'../public')) );
+        this.app.use( cors());
     }
 
     configurarSockets(){

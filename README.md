@@ -23,3 +23,5 @@ $ git push heroku master
 ```
     Ver Logs:    - heroku logs -n 1000 --tail
 ```
+
+ - npm i cors
